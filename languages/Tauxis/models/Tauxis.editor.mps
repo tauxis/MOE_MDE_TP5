@@ -25,7 +25,12 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
+        <property id="1186414551515" name="flag" index="VOm3f" />
+      </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -105,6 +110,27 @@
         <ref role="1NtTu8" to="mj33:1LoVswZOdpc" resolve="droite" />
       </node>
       <node concept="2iRfu4" id="1LoVswZOdpI" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1LoVswZOkK$">
+    <ref role="1XX52x" to="mj33:1LoVswZOkJF" resolve="Chaine" />
+    <node concept="3EZMnI" id="1LoVswZOkKA" role="2wV5jI">
+      <node concept="3F0ifn" id="1LoVswZOkKH" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <node concept="11LMrY" id="1LoVswZOkL7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="1LoVswZOkKN" role="3EZMnx">
+        <ref role="1NtTu8" to="mj33:1LoVswZOkJG" resolve="valeur" />
+      </node>
+      <node concept="3F0ifn" id="1LoVswZOkKV" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <node concept="11L4FC" id="1LoVswZOkL4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="1LoVswZOkKD" role="2iSdaV" />
     </node>
   </node>
 </model>

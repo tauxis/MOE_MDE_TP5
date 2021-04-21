@@ -15,6 +15,9 @@
         <property id="2042643875332413004" name="droite" index="zy3I4" />
       </concept>
       <concept id="2042643875332371387" name="Tauxis.structure.Addition" flags="ng" index="zydTN" />
+      <concept id="2042643875332443115" name="Tauxis.structure.Chaine" flags="ng" index="zyqoz">
+        <property id="2042643875332443116" name="valeur" index="zyqo$" />
+      </concept>
       <concept id="2042643875332330086" name="Tauxis.structure.DeclarationVariable" flags="ng" index="z_RYI">
         <child id="2042643875332332157" name="expression" index="z_RuP" />
       </concept>
@@ -47,6 +50,12 @@
       <node concept="zydTN" id="1LoVswZOkJC" role="z_RuP">
         <property role="zy3I2" value="12" />
         <property role="zy3I4" value="45" />
+      </node>
+    </node>
+    <node concept="z_RYI" id="1LoVswZOovl" role="z_RY$">
+      <property role="TrG5h" value="chaine" />
+      <node concept="zyqoz" id="1LoVswZOovN" role="z_RuP">
+        <property role="zyqo$" value="bb" />
       </node>
     </node>
   </node>

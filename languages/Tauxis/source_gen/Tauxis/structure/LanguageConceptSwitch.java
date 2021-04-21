@@ -10,19 +10,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int Addition = 0;
-  public static final int DeclarationVariable = 1;
-  public static final int Egalite = 2;
-  public static final int Expression = 3;
-  public static final int Instruction = 4;
-  public static final int Multiplication = 5;
-  public static final int Nombre = 6;
-  public static final int OperationBinaire = 7;
-  public static final int Programme = 8;
-  public static final int RefVariable = 9;
+  public static final int Chaine = 1;
+  public static final int DeclarationVariable = 2;
+  public static final int Egalite = 3;
+  public static final int Expression = 4;
+  public static final int Instruction = 5;
+  public static final int Multiplication = 6;
+  public static final int Nombre = 7;
+  public static final int OperationBinaire = 8;
+  public static final int Programme = 9;
+  public static final int RefVariable = 10;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L);
     builder.put(0x1c58edc83fd033bbL, Addition);
+    builder.put(0x1c58edc83fd14bebL, Chaine);
     builder.put(0x1c58edc83fcf9266L, DeclarationVariable);
     builder.put(0x1c58edc83fd033beL, Egalite);
     builder.put(0x1c58edc83fcf9a7aL, Expression);

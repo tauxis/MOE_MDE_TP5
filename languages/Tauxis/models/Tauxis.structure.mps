@@ -138,5 +138,16 @@
     <property role="34LRSv" value="==" />
     <ref role="1TJDcQ" node="1LoVswZO3eU" resolve="OperationBinaire" />
   </node>
+  <node concept="1TIwiD" id="1LoVswZOkJF">
+    <property role="EcuMT" value="2042643875332443115" />
+    <property role="TrG5h" value="Chaine" />
+    <property role="34LRSv" value="&quot;" />
+    <ref role="1TJDcQ" node="1LoVswZNTDU" resolve="Expression" />
+    <node concept="1TJgyi" id="1LoVswZOkJG" role="1TKVEl">
+      <property role="IQ2nx" value="2042643875332443116" />
+      <property role="TrG5h" value="valeur" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 
