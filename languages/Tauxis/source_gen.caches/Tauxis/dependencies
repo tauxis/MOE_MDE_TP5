@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="Tauxis.Language">
+    <classNode dependClassName="Tauxis.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="Tauxis.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="Tauxis.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="Tauxis.structure.StructureAspectDescriptor" />
@@ -12,6 +13,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.language.LanguageExtensions" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />

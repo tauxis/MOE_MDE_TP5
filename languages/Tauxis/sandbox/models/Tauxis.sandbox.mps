@@ -58,6 +58,13 @@
         <property role="zyqo$" value="bb" />
       </node>
     </node>
+    <node concept="z_RYI" id="1LoVswZOpPc" role="z_RY$">
+      <property role="TrG5h" value="controle" />
+      <node concept="zydTN" id="1LoVswZOpPq" role="z_RuP">
+        <property role="zy3I4" value="12" />
+        <property role="zy3I2" value="1231" />
+      </node>
+    </node>
   </node>
 </model>
 
