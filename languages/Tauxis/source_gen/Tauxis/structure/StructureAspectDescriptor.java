@@ -10,9 +10,11 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
+import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDeclarationVariable = createDescriptorForDeclarationVariable();
+  /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
   /*package*/ final ConceptDescriptor myConceptInstruction = createDescriptorForInstruction();
   /*package*/ final ConceptDescriptor myConceptProgramme = createDescriptorForProgramme();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -29,7 +31,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptDeclarationVariable, myConceptInstruction, myConceptProgramme);
+    return Arrays.asList(myConceptDeclarationVariable, myConceptExpression, myConceptInstruction, myConceptProgramme);
   }
 
   @Override
@@ -38,6 +40,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.DeclarationVariable:
         return myConceptDeclarationVariable;
+      case LanguageConceptSwitch.Expression:
+        return myConceptExpression;
       case LanguageConceptSwitch.Instruction:
         return myConceptInstruction;
       case LanguageConceptSwitch.Programme:
@@ -59,6 +63,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332330086");
     b.version(2);
+    b.aggregate("expression", 0x1c58edc83fcf9a7dL).target(0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9a7aL).optional(false).ordered(true).multiple(false).origin("2042643875332332157").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Tauxis", "Expression", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9a7aL);
+    b.class_(false, false, false);
+    b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332332154");
+    b.version(2);
+    b.property("valeur", 0x1c58edc83fcf9a7bL).type(PrimitiveTypeId.INTEGER).origin("2042643875332332155").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForInstruction() {
