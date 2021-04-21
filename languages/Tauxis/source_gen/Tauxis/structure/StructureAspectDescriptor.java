@@ -17,6 +17,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
   /*package*/ final ConceptDescriptor myConceptInstruction = createDescriptorForInstruction();
   /*package*/ final ConceptDescriptor myConceptProgramme = createDescriptorForProgramme();
+  /*package*/ final ConceptDescriptor myConceptRefVariable = createDescriptorForRefVariable();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -31,7 +32,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptDeclarationVariable, myConceptExpression, myConceptInstruction, myConceptProgramme);
+    return Arrays.asList(myConceptDeclarationVariable, myConceptExpression, myConceptInstruction, myConceptProgramme, myConceptRefVariable);
   }
 
   @Override
@@ -46,6 +47,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptInstruction;
       case LanguageConceptSwitch.Programme:
         return myConceptProgramme;
+      case LanguageConceptSwitch.RefVariable:
+        return myConceptRefVariable;
       default:
         return null;
     }
@@ -88,6 +91,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332330087");
     b.version(2);
     b.aggregate("instructions", 0x1c58edc83fcf926cL).target(0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9265L).optional(true).ordered(true).multiple(true).origin("2042643875332330092").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRefVariable() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Tauxis", "RefVariable", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd00cadL);
+    b.class_(false, false, false);
+    b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332361389");
+    b.version(2);
     return b.create();
   }
 }

@@ -13,6 +13,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Expression;
   private ConceptPresentation props_Instruction;
   private ConceptPresentation props_Programme;
+  private ConceptPresentation props_RefVariable;
 
   @Override
   @Nullable
@@ -46,6 +47,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Programme = cpb.create();
         }
         return props_Programme;
+      case LanguageConceptSwitch.RefVariable:
+        if (props_RefVariable == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("RefVariable");
+          props_RefVariable = cpb.create();
+        }
+        return props_RefVariable;
     }
     return null;
   }

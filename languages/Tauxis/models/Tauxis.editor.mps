@@ -18,13 +18,8 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
-      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
-      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
-      </concept>
-      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
-        <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
@@ -74,22 +69,23 @@
   </node>
   <node concept="24kQdi" id="1LoVswZNTVh">
     <ref role="1XX52x" to="mj33:1LoVswZNT9B" resolve="Programme" />
-    <node concept="3EZMnI" id="1LoVswZNTVj" role="2wV5jI">
-      <node concept="3F0ifn" id="1LoVswZNTVq" role="3EZMnx">
-        <property role="3F0ifm" value="programme" />
-      </node>
-      <node concept="3F0A7n" id="1LoVswZNTVw" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        <node concept="ljvvj" id="1LoVswZNVXb" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+    <node concept="3EZMnI" id="1LoVswZO0MQ" role="2wV5jI">
+      <node concept="2iRkQZ" id="1LoVswZO0MR" role="2iSdaV" />
+      <node concept="3EZMnI" id="1LoVswZO0MU" role="3EZMnx">
+        <node concept="2iRfu4" id="1LoVswZO0MV" role="2iSdaV" />
+        <node concept="VPM3Z" id="1LoVswZO0MW" role="3F10Kt" />
+        <node concept="3F0ifn" id="1LoVswZO0N0" role="3EZMnx">
+          <property role="3F0ifm" value="programme" />
+        </node>
+        <node concept="3F0A7n" id="1LoVswZO0N5" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
-      <node concept="3F2HdR" id="1LoVswZNVXi" role="3EZMnx">
+      <node concept="3F2HdR" id="1LoVswZO0NE" role="3EZMnx">
         <ref role="1NtTu8" to="mj33:1LoVswZNT9G" resolve="instructions" />
-        <node concept="2iRkQZ" id="1LoVswZNVXl" role="2czzBx" />
-        <node concept="VPM3Z" id="1LoVswZNVXm" role="3F10Kt" />
+        <node concept="2iRkQZ" id="1LoVswZO0NH" role="2czzBx" />
+        <node concept="VPM3Z" id="1LoVswZO0NI" role="3F10Kt" />
       </node>
-      <node concept="l2Vlx" id="1LoVswZNTVm" role="2iSdaV" />
     </node>
   </node>
 </model>
