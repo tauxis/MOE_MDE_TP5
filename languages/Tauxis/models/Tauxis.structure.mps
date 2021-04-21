@@ -109,15 +109,19 @@
     <property role="EcuMT" value="2042643875332371386" />
     <property role="TrG5h" value="OperationBinaire" />
     <ref role="1TJDcQ" node="1LoVswZNTDU" resolve="Expression" />
-    <node concept="1TJgyi" id="1LoVswZOdpa" role="1TKVEl">
-      <property role="IQ2nx" value="2042643875332413002" />
-      <property role="TrG5h" value="gauche" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyj" id="1LoVswZOsXT" role="1TKVEi">
+      <property role="IQ2ns" value="2042643875332476793" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="gauche" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1LoVswZO3eT" resolve="Nombre" />
     </node>
-    <node concept="1TJgyi" id="1LoVswZOdpc" role="1TKVEl">
-      <property role="IQ2nx" value="2042643875332413004" />
-      <property role="TrG5h" value="droite" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyj" id="1LoVswZOsXZ" role="1TKVEi">
+      <property role="IQ2ns" value="2042643875332476799" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="droite" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1LoVswZO3eT" resolve="Nombre" />
     </node>
   </node>
   <node concept="1TIwiD" id="1LoVswZO3eV">
