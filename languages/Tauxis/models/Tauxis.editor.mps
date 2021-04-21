@@ -18,6 +18,7 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -43,12 +44,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="24kQdi" id="1LoVswZNTSE">
-    <ref role="1XX52x" to="mj33:1LoVswZNTDU" resolve="Expression" />
-    <node concept="3F0A7n" id="1LoVswZNTSN" role="2wV5jI">
-      <ref role="1NtTu8" to="mj33:1LoVswZNTDV" resolve="valeur" />
-    </node>
-  </node>
   <node concept="24kQdi" id="1LoVswZNTTG">
     <ref role="1XX52x" to="mj33:1LoVswZNT9A" resolve="DeclarationVariable" />
     <node concept="3EZMnI" id="1LoVswZNTTI" role="2wV5jI">
@@ -86,6 +81,27 @@
         <node concept="2iRkQZ" id="1LoVswZO0NH" role="2czzBx" />
         <node concept="VPM3Z" id="1LoVswZO0NI" role="3F10Kt" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1LoVswZO3ft">
+    <ref role="1XX52x" to="mj33:1LoVswZO3eT" resolve="Nombre" />
+    <node concept="3F0A7n" id="1LoVswZO3ZI" role="2wV5jI">
+      <ref role="1NtTu8" to="mj33:1LoVswZO3eZ" resolve="valeur" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1LoVswZO3gm">
+    <ref role="1XX52x" to="mj33:1LoVswZO3eV" resolve="Addition" />
+    <node concept="3EZMnI" id="1LoVswZO3ZS" role="2wV5jI">
+      <node concept="3F0A7n" id="1LoVswZO3ZZ" role="3EZMnx">
+        <ref role="1NtTu8" to="mj33:1LoVswZO3ZN" resolve="a" />
+      </node>
+      <node concept="3F0ifn" id="1LoVswZO405" role="3EZMnx">
+        <property role="3F0ifm" value="+" />
+      </node>
+      <node concept="3F0A7n" id="1LoVswZO40d" role="3EZMnx">
+        <ref role="1NtTu8" to="mj33:1LoVswZO3ZP" resolve="b" />
+      </node>
+      <node concept="l2Vlx" id="1LoVswZO3ZV" role="2iSdaV" />
     </node>
   </node>
 </model>

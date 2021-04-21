@@ -7,8 +7,12 @@
   <imports />
   <registry>
     <language id="f6cd233e-f2b4-47e9-92ff-415cf49c3252" name="Tauxis">
-      <concept id="2042643875332332154" name="Tauxis.structure.Expression" flags="ng" index="z_RuM">
-        <property id="2042643875332332155" name="valeur" index="z_RuN" />
+      <concept id="2042643875332371385" name="Tauxis.structure.Nombre" flags="ng" index="zydTL">
+        <property id="2042643875332371391" name="valeur" index="zydTR" />
+      </concept>
+      <concept id="2042643875332371387" name="Tauxis.structure.Addition" flags="ng" index="zydTN">
+        <property id="2042643875332374515" name="a" index="zyd8V" />
+        <property id="2042643875332374517" name="b" index="zyd8X" />
       </concept>
       <concept id="2042643875332330086" name="Tauxis.structure.DeclarationVariable" flags="ng" index="z_RYI">
         <child id="2042643875332332157" name="expression" index="z_RuP" />
@@ -27,14 +31,21 @@
     <property role="TrG5h" value="exemple" />
     <node concept="z_RYI" id="1LoVswZNTDL" role="z_RY$">
       <property role="TrG5h" value="a " />
-      <node concept="z_RuM" id="1LoVswZNTSc" role="z_RuP">
-        <property role="z_RuN" value="32" />
+      <node concept="zydTL" id="1LoVswZOa9Q" role="z_RuP">
+        <property role="zydTR" value="42" />
       </node>
     </node>
     <node concept="z_RYI" id="1LoVswZNTDQ" role="z_RY$">
       <property role="TrG5h" value="b" />
-      <node concept="z_RuM" id="1LoVswZNTSe" role="z_RuP">
-        <property role="z_RuN" value="42" />
+      <node concept="zydTL" id="1LoVswZO7e9" role="z_RuP">
+        <property role="zydTR" value="12" />
+      </node>
+    </node>
+    <node concept="z_RYI" id="1LoVswZOaa5" role="z_RY$">
+      <property role="TrG5h" value="addition" />
+      <node concept="zydTN" id="1LoVswZOaaf" role="z_RuP">
+        <property role="zyd8V" value="12" />
+        <property role="zyd8X" value="12" />
       </node>
     </node>
   </node>

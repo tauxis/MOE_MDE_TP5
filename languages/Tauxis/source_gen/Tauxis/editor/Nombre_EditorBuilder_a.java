@@ -23,11 +23,11 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class Expression_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class Nombre_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public Expression_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public Nombre_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -45,7 +45,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.valeur$Zuv3;
+      final SProperty property = PROPS.valeur$LyMX;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
       editorCell.setDefaultText("<no valeur>");
@@ -71,7 +71,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty valeur$Zuv3 = MetaAdapterFactory.getProperty(0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9a7aL, 0x1c58edc83fcf9a7bL, "valeur");
+    /*package*/ static final SProperty valeur$LyMX = MetaAdapterFactory.getProperty(0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd033b9L, 0x1c58edc83fd033bfL, "valeur");
   }
 
   private static final class CONCEPTS {

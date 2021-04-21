@@ -82,17 +82,56 @@
   <node concept="1TIwiD" id="1LoVswZNTDU">
     <property role="EcuMT" value="2042643875332332154" />
     <property role="TrG5h" value="Expression" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1LoVswZNTDV" role="1TKVEl">
-      <property role="IQ2nx" value="2042643875332332155" />
-      <property role="TrG5h" value="valeur" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1LoVswZO0MH">
     <property role="EcuMT" value="2042643875332361389" />
     <property role="TrG5h" value="RefVariable" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1LoVswZO3f1" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1LoVswZO3eT">
+    <property role="EcuMT" value="2042643875332371385" />
+    <property role="TrG5h" value="Nombre" />
+    <ref role="1TJDcQ" node="1LoVswZNTDU" resolve="Expression" />
+    <node concept="1TJgyi" id="1LoVswZO3eZ" role="1TKVEl">
+      <property role="IQ2nx" value="2042643875332371391" />
+      <property role="TrG5h" value="valeur" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1LoVswZO3eU">
+    <property role="EcuMT" value="2042643875332371386" />
+    <property role="TrG5h" value="OperationBinaire" />
+    <ref role="1TJDcQ" node="1LoVswZNTDU" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="1LoVswZO3eV">
+    <property role="EcuMT" value="2042643875332371387" />
+    <property role="TrG5h" value="Addition" />
+    <ref role="1TJDcQ" node="1LoVswZO3eU" resolve="OperationBinaire" />
+    <node concept="1TJgyi" id="1LoVswZO3ZN" role="1TKVEl">
+      <property role="IQ2nx" value="2042643875332374515" />
+      <property role="TrG5h" value="a" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="1LoVswZO3ZP" role="1TKVEl">
+      <property role="IQ2nx" value="2042643875332374517" />
+      <property role="TrG5h" value="b" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1LoVswZO3eW">
+    <property role="EcuMT" value="2042643875332371388" />
+    <property role="TrG5h" value="Multiplication" />
+    <ref role="1TJDcQ" node="1LoVswZO3eU" resolve="OperationBinaire" />
+  </node>
+  <node concept="1TIwiD" id="1LoVswZO3eY">
+    <property role="EcuMT" value="2042643875332371390" />
+    <property role="TrG5h" value="Egalite" />
+    <ref role="1TJDcQ" node="1LoVswZO3eU" resolve="OperationBinaire" />
   </node>
 </model>
 

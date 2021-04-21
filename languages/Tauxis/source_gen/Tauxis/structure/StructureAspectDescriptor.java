@@ -13,9 +13,14 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptAddition = createDescriptorForAddition();
   /*package*/ final ConceptDescriptor myConceptDeclarationVariable = createDescriptorForDeclarationVariable();
+  /*package*/ final ConceptDescriptor myConceptEgalite = createDescriptorForEgalite();
   /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
   /*package*/ final ConceptDescriptor myConceptInstruction = createDescriptorForInstruction();
+  /*package*/ final ConceptDescriptor myConceptMultiplication = createDescriptorForMultiplication();
+  /*package*/ final ConceptDescriptor myConceptNombre = createDescriptorForNombre();
+  /*package*/ final ConceptDescriptor myConceptOperationBinaire = createDescriptorForOperationBinaire();
   /*package*/ final ConceptDescriptor myConceptProgramme = createDescriptorForProgramme();
   /*package*/ final ConceptDescriptor myConceptRefVariable = createDescriptorForRefVariable();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -32,19 +37,29 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptDeclarationVariable, myConceptExpression, myConceptInstruction, myConceptProgramme, myConceptRefVariable);
+    return Arrays.asList(myConceptAddition, myConceptDeclarationVariable, myConceptEgalite, myConceptExpression, myConceptInstruction, myConceptMultiplication, myConceptNombre, myConceptOperationBinaire, myConceptProgramme, myConceptRefVariable);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.Addition:
+        return myConceptAddition;
       case LanguageConceptSwitch.DeclarationVariable:
         return myConceptDeclarationVariable;
+      case LanguageConceptSwitch.Egalite:
+        return myConceptEgalite;
       case LanguageConceptSwitch.Expression:
         return myConceptExpression;
       case LanguageConceptSwitch.Instruction:
         return myConceptInstruction;
+      case LanguageConceptSwitch.Multiplication:
+        return myConceptMultiplication;
+      case LanguageConceptSwitch.Nombre:
+        return myConceptNombre;
+      case LanguageConceptSwitch.OperationBinaire:
+        return myConceptOperationBinaire;
       case LanguageConceptSwitch.Programme:
         return myConceptProgramme;
       case LanguageConceptSwitch.RefVariable:
@@ -59,6 +74,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForAddition() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Tauxis", "Addition", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd033bbL);
+    b.class_(false, false, false);
+    b.super_("Tauxis.structure.OperationBinaire", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd033baL);
+    b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332371387");
+    b.version(2);
+    b.property("a", 0x1c58edc83fd03ff3L).type(PrimitiveTypeId.INTEGER).origin("2042643875332374515").done();
+    b.property("b", 0x1c58edc83fd03ff5L).type(PrimitiveTypeId.INTEGER).origin("2042643875332374517").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForDeclarationVariable() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Tauxis", "DeclarationVariable", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9266L);
     b.class_(false, false, false);
@@ -69,18 +94,50 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("expression", 0x1c58edc83fcf9a7dL).target(0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9a7aL).optional(false).ordered(true).multiple(false).origin("2042643875332332157").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForEgalite() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Tauxis", "Egalite", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd033beL);
+    b.class_(false, false, false);
+    b.super_("Tauxis.structure.OperationBinaire", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd033baL);
+    b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332371390");
+    b.version(2);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForExpression() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Tauxis", "Expression", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9a7aL);
-    b.class_(false, false, false);
+    b.class_(false, true, false);
     b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332332154");
     b.version(2);
-    b.property("valeur", 0x1c58edc83fcf9a7bL).type(PrimitiveTypeId.INTEGER).origin("2042643875332332155").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForInstruction() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Tauxis", "Instruction", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9265L);
     b.class_(false, true, false);
     b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332330085");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMultiplication() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Tauxis", "Multiplication", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd033bcL);
+    b.class_(false, false, false);
+    b.super_("Tauxis.structure.OperationBinaire", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd033baL);
+    b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332371388");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNombre() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Tauxis", "Nombre", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd033b9L);
+    b.class_(false, false, false);
+    b.super_("Tauxis.structure.Expression", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9a7aL);
+    b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332371385");
+    b.version(2);
+    b.property("valeur", 0x1c58edc83fd033bfL).type(PrimitiveTypeId.STRING).origin("2042643875332371391").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForOperationBinaire() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Tauxis", "OperationBinaire", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd033baL);
+    b.class_(false, false, false);
+    b.super_("Tauxis.structure.Expression", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9a7aL);
+    b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332371386");
     b.version(2);
     return b.create();
   }
@@ -96,6 +153,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForRefVariable() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Tauxis", "RefVariable", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd00cadL);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332361389");
     b.version(2);
     return b.create();

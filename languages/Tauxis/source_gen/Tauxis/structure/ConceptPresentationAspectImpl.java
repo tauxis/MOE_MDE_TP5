@@ -9,9 +9,14 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Addition;
   private ConceptPresentation props_DeclarationVariable;
+  private ConceptPresentation props_Egalite;
   private ConceptPresentation props_Expression;
   private ConceptPresentation props_Instruction;
+  private ConceptPresentation props_Multiplication;
+  private ConceptPresentation props_Nombre;
+  private ConceptPresentation props_OperationBinaire;
   private ConceptPresentation props_Programme;
   private ConceptPresentation props_RefVariable;
 
@@ -20,6 +25,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Addition:
+        if (props_Addition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Addition");
+          props_Addition = cpb.create();
+        }
+        return props_Addition;
       case LanguageConceptSwitch.DeclarationVariable:
         if (props_DeclarationVariable == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -27,10 +39,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DeclarationVariable = cpb.create();
         }
         return props_DeclarationVariable;
+      case LanguageConceptSwitch.Egalite:
+        if (props_Egalite == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Egalite");
+          props_Egalite = cpb.create();
+        }
+        return props_Egalite;
       case LanguageConceptSwitch.Expression:
         if (props_Expression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Expression");
           props_Expression = cpb.create();
         }
         return props_Expression;
@@ -40,6 +58,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Instruction = cpb.create();
         }
         return props_Instruction;
+      case LanguageConceptSwitch.Multiplication:
+        if (props_Multiplication == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Multiplication");
+          props_Multiplication = cpb.create();
+        }
+        return props_Multiplication;
+      case LanguageConceptSwitch.Nombre:
+        if (props_Nombre == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Nombre");
+          props_Nombre = cpb.create();
+        }
+        return props_Nombre;
+      case LanguageConceptSwitch.OperationBinaire:
+        if (props_OperationBinaire == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("OperationBinaire");
+          props_OperationBinaire = cpb.create();
+        }
+        return props_OperationBinaire;
       case LanguageConceptSwitch.Programme:
         if (props_Programme == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -50,7 +89,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.RefVariable:
         if (props_RefVariable == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("RefVariable");
+          cpb.presentationByName();
           props_RefVariable = cpb.create();
         }
         return props_RefVariable;
