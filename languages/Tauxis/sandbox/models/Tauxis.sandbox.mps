@@ -10,10 +10,11 @@
       <concept id="2042643875332371385" name="Tauxis.structure.Nombre" flags="ng" index="zydTL">
         <property id="2042643875332371391" name="valeur" index="zydTR" />
       </concept>
-      <concept id="2042643875332371387" name="Tauxis.structure.Addition" flags="ng" index="zydTN">
-        <property id="2042643875332374515" name="a" index="zyd8V" />
-        <property id="2042643875332374517" name="b" index="zyd8X" />
+      <concept id="2042643875332371386" name="Tauxis.structure.OperationBinaire" flags="ng" index="zydTM">
+        <property id="2042643875332413002" name="gauche" index="zy3I2" />
+        <property id="2042643875332413004" name="droite" index="zy3I4" />
       </concept>
+      <concept id="2042643875332371387" name="Tauxis.structure.Addition" flags="ng" index="zydTN" />
       <concept id="2042643875332330086" name="Tauxis.structure.DeclarationVariable" flags="ng" index="z_RYI">
         <child id="2042643875332332157" name="expression" index="z_RuP" />
       </concept>
@@ -43,9 +44,9 @@
     </node>
     <node concept="z_RYI" id="1LoVswZOdoX" role="z_RY$">
       <property role="TrG5h" value="add" />
-      <node concept="zydTN" id="1LoVswZOdp7" role="z_RuP">
-        <property role="zyd8V" value="12" />
-        <property role="zyd8X" value="12" />
+      <node concept="zydTN" id="1LoVswZOkJC" role="z_RuP">
+        <property role="zy3I2" value="12" />
+        <property role="zy3I4" value="45" />
       </node>
     </node>
   </node>
