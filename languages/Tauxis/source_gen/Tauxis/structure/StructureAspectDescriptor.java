@@ -82,6 +82,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("a", 0x1c58edc83fd03ff3L).type(PrimitiveTypeId.INTEGER).origin("2042643875332374515").done();
     b.property("b", 0x1c58edc83fd03ff5L).type(PrimitiveTypeId.INTEGER).origin("2042643875332374517").done();
+    b.alias("+");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDeclarationVariable() {
@@ -92,6 +93,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332330086");
     b.version(2);
     b.aggregate("expression", 0x1c58edc83fcf9a7dL).target(0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9a7aL).optional(false).ordered(true).multiple(false).origin("2042643875332332157").done();
+    b.alias("var");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEgalite() {
@@ -100,6 +102,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("Tauxis.structure.OperationBinaire", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd033baL);
     b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332371390");
     b.version(2);
+    b.alias("==");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForExpression() {
@@ -122,6 +125,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("Tauxis.structure.OperationBinaire", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd033baL);
     b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332371388");
     b.version(2);
+    b.alias("*");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForNombre() {
