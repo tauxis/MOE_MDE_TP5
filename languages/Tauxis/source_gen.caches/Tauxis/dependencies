@@ -5,10 +5,12 @@
     <classNode dependClassName="Tauxis.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="Tauxis.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="Tauxis.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="Tauxis.typesystem.TypesystemDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.language.LanguageExtensions" />

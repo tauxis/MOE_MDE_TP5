@@ -82,7 +82,6 @@
         <property role="zydTR" value="1" />
       </node>
     </node>
-    <node concept="1MnucZ" id="40BRAwMuF8T" role="z_RY$" />
   </node>
 </model>
 
