@@ -248,9 +248,9 @@
       <node id="2042643875332371386" at="153,34,154,107" concept="0" />
       <node id="2042643875332371386" at="154,107,155,93" concept="0" />
       <node id="2042643875332371386" at="155,93,156,17" concept="0" />
-      <node id="2042643875332413002" at="156,17,157,113" concept="0" />
-      <node id="2042643875332413004" at="157,113,158,113" concept="0" />
-      <node id="2042643875332371386" at="158,113,159,22" concept="4" />
+      <node id="2042643875332476793" at="156,17,157,200" concept="0" />
+      <node id="2042643875332476799" at="157,200,158,200" concept="0" />
+      <node id="2042643875332371386" at="158,200,159,22" concept="4" />
       <node id="2042643875332371386" at="151,0,161,0" concept="6" trace="createDescriptorForOperationBinaire#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2042643875332371386" at="64,50,65,41" />
       <scope id="2042643875332371386" at="151,74,159,22">

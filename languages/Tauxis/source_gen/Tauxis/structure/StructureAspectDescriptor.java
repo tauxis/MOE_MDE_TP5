@@ -154,8 +154,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("Tauxis.structure.Expression", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9a7aL);
     b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332371386");
     b.version(2);
-    b.property("gauche", 0x1c58edc83fd0d64aL).type(PrimitiveTypeId.INTEGER).origin("2042643875332413002").done();
-    b.property("droite", 0x1c58edc83fd0d64cL).type(PrimitiveTypeId.INTEGER).origin("2042643875332413004").done();
+    b.aggregate("gauche", 0x1c58edc83fd1cf79L).target(0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd033b9L).optional(false).ordered(true).multiple(false).origin("2042643875332476793").done();
+    b.aggregate("droite", 0x1c58edc83fd1cf7fL).target(0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd033b9L).optional(false).ordered(true).multiple(false).origin("2042643875332476799").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForProgramme() {

@@ -11,10 +11,11 @@
         <property id="2042643875332371391" name="valeur" index="zydTR" />
       </concept>
       <concept id="2042643875332371386" name="Tauxis.structure.OperationBinaire" flags="ng" index="zydTM">
-        <property id="2042643875332413002" name="gauche" index="zy3I2" />
-        <property id="2042643875332413004" name="droite" index="zy3I4" />
+        <child id="2042643875332476793" name="gauche" index="zyiaL" />
+        <child id="2042643875332476799" name="droite" index="zyiaR" />
       </concept>
       <concept id="2042643875332371387" name="Tauxis.structure.Addition" flags="ng" index="zydTN" />
+      <concept id="2042643875332371390" name="Tauxis.structure.Egalite" flags="ng" index="zydTQ" />
       <concept id="2042643875332443115" name="Tauxis.structure.Chaine" flags="ng" index="zyqoz">
         <property id="2042643875332443116" name="valeur" index="zyqo$" />
       </concept>
@@ -34,7 +35,7 @@
   <node concept="z_RYJ" id="1LoVswZNTDK">
     <property role="TrG5h" value="exemple" />
     <node concept="z_RYI" id="1LoVswZNTDL" role="z_RY$">
-      <property role="TrG5h" value="a " />
+      <property role="TrG5h" value="a" />
       <node concept="zydTL" id="1LoVswZOa9Q" role="z_RuP">
         <property role="zydTR" value="42" />
       </node>
@@ -45,11 +46,15 @@
         <property role="zydTR" value="12" />
       </node>
     </node>
-    <node concept="z_RYI" id="1LoVswZOdoX" role="z_RY$">
+    <node concept="z_RYI" id="40BRAwMuzOP" role="z_RY$">
       <property role="TrG5h" value="add" />
-      <node concept="zydTN" id="1LoVswZOkJC" role="z_RuP">
-        <property role="zy3I2" value="12" />
-        <property role="zy3I4" value="45" />
+      <node concept="zydTN" id="40BRAwMuzP3" role="z_RuP">
+        <node concept="zydTL" id="40BRAwMuzP5" role="zyiaL">
+          <property role="zydTR" value="12" />
+        </node>
+        <node concept="zydTL" id="40BRAwMuzP7" role="zyiaR">
+          <property role="zydTR" value="45" />
+        </node>
       </node>
     </node>
     <node concept="z_RYI" id="1LoVswZOovl" role="z_RY$">
@@ -60,9 +65,13 @@
     </node>
     <node concept="z_RYI" id="1LoVswZOpPc" role="z_RY$">
       <property role="TrG5h" value="controle" />
-      <node concept="zydTN" id="1LoVswZOpPq" role="z_RuP">
-        <property role="zy3I4" value="12" />
-        <property role="zy3I2" value="1231" />
+      <node concept="zydTQ" id="40BRAwMuzPe" role="z_RuP">
+        <node concept="zydTL" id="40BRAwMuzPg" role="zyiaL">
+          <property role="zydTR" value="12" />
+        </node>
+        <node concept="zydTL" id="40BRAwMuzPi" role="zyiaR">
+          <property role="zydTR" value="45" />
+        </node>
       </node>
     </node>
   </node>
