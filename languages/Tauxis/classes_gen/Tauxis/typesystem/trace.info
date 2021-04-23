@@ -11,15 +11,15 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="9,0,25,0" name="Tauxis.typesystem.TypesystemDescriptor" />
+      <unit at="9,0,37,0" name="Tauxis.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:782c04d1-2bb8-47fe-990c-f6177092284f(Tauxis.typesystem)/4622908081623970595">
     <file name="TypesystemDescriptor.java">
-      <node id="4622908081623970595" at="19,5,20,92" concept="6" />
-      <node id="4622908081623970595" at="20,92,21,55" concept="2" />
-      <node id="4622908081623970595" at="18,5,22,5" concept="0" />
-      <scope id="4622908081623970595" at="19,5,21,55">
+      <node id="4622908081623970595" at="31,5,32,92" concept="6" />
+      <node id="4622908081623970595" at="32,92,33,55" concept="2" />
+      <node id="4622908081623970595" at="30,5,34,5" concept="0" />
+      <scope id="4622908081623970595" at="31,5,33,55">
         <var name="nonTypesystemRule" id="4622908081623970595" />
       </scope>
     </file>
@@ -78,10 +78,10 @@
   </root>
   <root nodeRef="r:782c04d1-2bb8-47fe-990c-f6177092284f(Tauxis.typesystem)/4622908081624044845">
     <file name="TypesystemDescriptor.java">
-      <node id="4622908081624044845" at="15,5,16,78" concept="6" />
-      <node id="4622908081624044845" at="16,78,17,47" concept="2" />
-      <node id="4622908081624044845" at="14,5,18,5" concept="0" />
-      <scope id="4622908081624044845" at="15,5,17,47">
+      <node id="4622908081624044845" at="23,5,24,78" concept="6" />
+      <node id="4622908081624044845" at="24,78,25,47" concept="2" />
+      <node id="4622908081624044845" at="22,5,26,5" concept="0" />
+      <scope id="4622908081624044845" at="23,5,25,47">
         <var name="inferenceRule" id="4622908081624044845" />
       </scope>
     </file>
@@ -168,6 +168,176 @@
       </scope>
       <unit id="4622908081624052235" at="36,0,39,0" name="Tauxis.typesystem.typeof_Chaine_InferenceRule$CONCEPTS" />
       <unit id="4622908081624052235" at="16,0,40,0" name="Tauxis.typesystem.typeof_Chaine_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:782c04d1-2bb8-47fe-990c-f6177092284f(Tauxis.typesystem)/4622908081624060090">
+    <file name="TypesystemDescriptor.java">
+      <node id="4622908081624060090" at="27,5,28,88" concept="6" />
+      <node id="4622908081624060090" at="28,88,29,47" concept="2" />
+      <node id="4622908081624060090" at="26,5,30,5" concept="0" />
+      <scope id="4622908081624060090" at="27,5,29,47">
+        <var name="inferenceRule" id="4622908081624060090" />
+      </scope>
+    </file>
+    <file name="typeof_OperationBinaire_InferenceRule.java">
+      <node id="4622908081624060589" at="21,5,22,58" concept="6" />
+      <node id="4622908081624060589" at="22,58,23,183" concept="6" />
+      <node id="4622908081624060589" at="23,183,24,404" concept="2" />
+      <node id="4622908081624062175" at="27,7,28,60" concept="6" />
+      <node id="4622908081624062175" at="28,60,29,185" concept="6" />
+      <node id="4622908081624062175" at="29,185,30,448" concept="2" />
+      <node id="4622908081624060090" at="34,50,35,40" concept="7" />
+      <node id="4622908081624060090" at="37,68,38,102" concept="7" />
+      <node id="4622908081624060090" at="40,30,41,17" concept="7" />
+      <node id="4622908081624060090" at="45,0,46,0" concept="8" trace="gauche$pZDs" />
+      <node id="4622908081624060090" at="46,0,47,0" concept="8" trace="droite$q13y" />
+      <node id="4622908081624060090" at="50,0,51,0" concept="8" trace="OperationBinaire$VF" />
+      <node id="4622908081624060090" at="18,0,20,0" concept="1" trace="typeof_OperationBinaire_InferenceRule#()V" />
+      <node id="4622908081624060090" at="34,0,37,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4622908081624060090" at="37,0,40,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4622908081624060090" at="40,0,43,0" concept="5" trace="overrides#()Z" />
+      <node id="4622908081624060589" at="20,129,25,5" concept="0" />
+      <node id="4622908081624062175" at="26,59,31,7" concept="0" />
+      <node id="4622908081624062175" at="25,5,32,5" concept="4" />
+      <node id="4622908081624060090" at="20,0,34,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4622908081624060090" at="18,50,18,50" />
+      <scope id="4622908081624060090" at="34,50,35,40" />
+      <scope id="4622908081624060090" at="37,68,38,102" />
+      <scope id="4622908081624060090" at="40,30,41,17" />
+      <scope id="4622908081624060090" at="18,0,20,0" />
+      <scope id="4622908081624060589" at="21,5,24,404">
+        <var name="_info_12389875345" id="4622908081624060589" />
+        <var name="_nodeToCheck_1029348928467" id="4622908081624060589" />
+      </scope>
+      <scope id="4622908081624062175" at="27,7,30,448">
+        <var name="_info_12389875345" id="4622908081624062175" />
+        <var name="_nodeToCheck_1029348928467" id="4622908081624062175" />
+      </scope>
+      <scope id="4622908081624060090" at="34,0,37,0" />
+      <scope id="4622908081624060090" at="37,0,40,0">
+        <var name="argument" id="4622908081624060090" />
+      </scope>
+      <scope id="4622908081624060090" at="40,0,43,0" />
+      <scope id="4622908081624062175" at="26,59,31,7" />
+      <scope id="4622908081624060091" at="20,129,32,5" />
+      <scope id="4622908081624060090" at="20,0,34,0">
+        <var name="operationBinaire" id="4622908081624060090" />
+        <var name="status" id="4622908081624060090" />
+        <var name="typeCheckingContext" id="4622908081624060090" />
+      </scope>
+      <unit id="4622908081624060090" at="49,0,52,0" name="Tauxis.typesystem.typeof_OperationBinaire_InferenceRule$CONCEPTS" />
+      <unit id="4622908081624060090" at="44,0,48,0" name="Tauxis.typesystem.typeof_OperationBinaire_InferenceRule$LINKS" />
+      <unit id="4622908081624060090" at="17,0,53,0" name="Tauxis.typesystem.typeof_OperationBinaire_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:782c04d1-2bb8-47fe-990c-f6177092284f(Tauxis.typesystem)/4622908081624063748">
+    <file name="TypesystemDescriptor.java">
+      <node id="4622908081624063748" at="19,5,20,79" concept="6" />
+      <node id="4622908081624063748" at="20,79,21,47" concept="2" />
+      <node id="4622908081624063748" at="18,5,22,5" concept="0" />
+      <scope id="4622908081624063748" at="19,5,21,47">
+        <var name="inferenceRule" id="4622908081624063748" />
+      </scope>
+    </file>
+    <file name="typeof_Egalite_InferenceRule.java">
+      <node id="4622908081624066750" at="21,76,22,16" concept="7" />
+      <node id="4622908081624064147" at="25,5,26,49" concept="6" />
+      <node id="4622908081624064147" at="26,49,27,183" concept="6" />
+      <node id="4622908081624064147" at="27,183,28,396" concept="2" />
+      <node id="4622908081624066129" at="31,7,32,97" concept="6" />
+      <node id="4622908081624066129" at="32,97,33,185" concept="6" />
+      <node id="4622908081624066129" at="33,185,34,403" concept="2" />
+      <node id="4622908081624063748" at="38,50,39,31" concept="7" />
+      <node id="4622908081624063748" at="41,68,42,102" concept="7" />
+      <node id="4622908081624063748" at="46,0,47,0" concept="8" trace="gauche$pZDs" />
+      <node id="4622908081624063748" at="47,0,48,0" concept="8" trace="droite$q13y" />
+      <node id="4622908081624063748" at="51,0,52,0" concept="8" trace="Egalite$7M" />
+      <node id="4622908081624063748" at="19,0,21,0" concept="1" trace="typeof_Egalite_InferenceRule#()V" />
+      <node id="4622908081624063748" at="21,0,24,0" concept="5" trace="overrides#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Z" />
+      <node id="4622908081624063748" at="38,0,41,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4622908081624063748" at="41,0,44,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4622908081624064147" at="24,120,29,5" concept="0" />
+      <node id="4622908081624066129" at="30,59,35,7" concept="0" />
+      <node id="4622908081624066129" at="29,5,36,5" concept="4" />
+      <node id="4622908081624063748" at="24,0,38,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4622908081624063748" at="19,41,19,41" />
+      <scope id="4622908081624066502" at="21,76,22,16" />
+      <scope id="4622908081624063748" at="38,50,39,31" />
+      <scope id="4622908081624063748" at="41,68,42,102" />
+      <scope id="4622908081624063748" at="19,0,21,0" />
+      <scope id="4622908081624063748" at="21,0,24,0">
+        <var name="egalite" id="4622908081624063748" />
+        <var name="status" id="4622908081624063748" />
+      </scope>
+      <scope id="4622908081624064147" at="25,5,28,396">
+        <var name="_info_12389875345" id="4622908081624064147" />
+        <var name="_nodeToCheck_1029348928467" id="4622908081624064147" />
+      </scope>
+      <scope id="4622908081624066129" at="31,7,34,403">
+        <var name="_info_12389875345" id="4622908081624066129" />
+        <var name="_nodeToCheck_1029348928467" id="4622908081624066129" />
+      </scope>
+      <scope id="4622908081624063748" at="38,0,41,0" />
+      <scope id="4622908081624063748" at="41,0,44,0">
+        <var name="argument" id="4622908081624063748" />
+      </scope>
+      <scope id="4622908081624066129" at="30,59,35,7" />
+      <scope id="4622908081624063749" at="24,120,36,5" />
+      <scope id="4622908081624063748" at="24,0,38,0">
+        <var name="egalite" id="4622908081624063748" />
+        <var name="status" id="4622908081624063748" />
+        <var name="typeCheckingContext" id="4622908081624063748" />
+      </scope>
+      <unit id="4622908081624063748" at="50,0,53,0" name="Tauxis.typesystem.typeof_Egalite_InferenceRule$CONCEPTS" />
+      <unit id="4622908081624063748" at="45,0,49,0" name="Tauxis.typesystem.typeof_Egalite_InferenceRule$LINKS" />
+      <unit id="4622908081624063748" at="18,0,54,0" name="Tauxis.typesystem.typeof_Egalite_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:782c04d1-2bb8-47fe-990c-f6177092284f(Tauxis.typesystem)/4622908081624066854">
+    <file name="TypesystemDescriptor.java">
+      <node id="4622908081624066854" at="15,5,16,91" concept="6" />
+      <node id="4622908081624066854" at="16,91,17,47" concept="2" />
+      <node id="4622908081624066854" at="14,5,18,5" concept="0" />
+      <scope id="4622908081624066854" at="15,5,17,47">
+        <var name="inferenceRule" id="4622908081624066854" />
+      </scope>
+    </file>
+    <file name="typeof_DeclarationVariable_InferenceRule.java">
+      <node id="4622908081624067361" at="20,5,21,61" concept="6" />
+      <node id="4622908081624067361" at="21,61,22,183" concept="6" />
+      <node id="4622908081624067361" at="22,183,23,396" concept="2" />
+      <node id="4622908081624066854" at="26,50,27,43" concept="7" />
+      <node id="4622908081624066854" at="29,68,30,102" concept="7" />
+      <node id="4622908081624066854" at="32,30,33,17" concept="7" />
+      <node id="4622908081624066854" at="37,0,38,0" concept="8" trace="DeclarationVariable$vh" />
+      <node id="4622908081624066854" at="17,0,19,0" concept="1" trace="typeof_DeclarationVariable_InferenceRule#()V" />
+      <node id="4622908081624066854" at="26,0,29,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4622908081624066854" at="29,0,32,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4622908081624066854" at="32,0,35,0" concept="5" trace="overrides#()Z" />
+      <node id="4622908081624067361" at="19,132,24,5" concept="0" />
+      <node id="4622908081624066854" at="19,0,26,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4622908081624066854" at="17,53,17,53" />
+      <scope id="4622908081624066854" at="26,50,27,43" />
+      <scope id="4622908081624066854" at="29,68,30,102" />
+      <scope id="4622908081624066854" at="32,30,33,17" />
+      <scope id="4622908081624066854" at="17,0,19,0" />
+      <scope id="4622908081624067361" at="20,5,23,396">
+        <var name="_info_12389875345" id="4622908081624067361" />
+        <var name="_nodeToCheck_1029348928467" id="4622908081624067361" />
+      </scope>
+      <scope id="4622908081624066854" at="26,0,29,0" />
+      <scope id="4622908081624066854" at="29,0,32,0">
+        <var name="argument" id="4622908081624066854" />
+      </scope>
+      <scope id="4622908081624066854" at="32,0,35,0" />
+      <scope id="4622908081624066855" at="19,132,24,5" />
+      <scope id="4622908081624066854" at="19,0,26,0">
+        <var name="declarationVariable" id="4622908081624066854" />
+        <var name="status" id="4622908081624066854" />
+        <var name="typeCheckingContext" id="4622908081624066854" />
+      </scope>
+      <unit id="4622908081624066854" at="36,0,39,0" name="Tauxis.typesystem.typeof_DeclarationVariable_InferenceRule$CONCEPTS" />
+      <unit id="4622908081624066854" at="16,0,40,0" name="Tauxis.typesystem.typeof_DeclarationVariable_InferenceRule" />
     </file>
   </root>
 </debug-info>

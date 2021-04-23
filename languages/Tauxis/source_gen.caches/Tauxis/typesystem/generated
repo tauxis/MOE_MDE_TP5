@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-54hkpq5cxhrqar7sau8drf7dd4kwv02">
-  <files names="TypesystemDescriptor.java:check_Programme_NonTypesystemRule.java:typeof_Chaine_InferenceRule.java:typeof_Nombre_InferenceRule.java" />
+<product version="3" modelHash="-ci9prtqvyehoaeb67575wzssr79h1wg">
+  <files names="TypesystemDescriptor.java:check_Programme_NonTypesystemRule.java:typeof_Chaine_InferenceRule.java:typeof_DeclarationVariable_InferenceRule.java:typeof_Egalite_InferenceRule.java:typeof_Nombre_InferenceRule.java:typeof_OperationBinaire_InferenceRule.java" />
 </product>
 
