@@ -25,6 +25,7 @@
       <concept id="2042643875332330087" name="Tauxis.structure.Programme" flags="ng" index="z_RYJ">
         <child id="2042643875332330092" name="instructions" index="z_RY$" />
       </concept>
+      <concept id="4622908081623940439" name="Tauxis.structure.LigneVide" flags="ng" index="1MnucZ" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -48,11 +49,11 @@
     </node>
     <node concept="z_RYI" id="40BRAwMuzOP" role="z_RY$">
       <property role="TrG5h" value="add" />
-      <node concept="zydTN" id="40BRAwMuzP3" role="z_RuP">
-        <node concept="zydTL" id="40BRAwMuzP5" role="zyiaL">
+      <node concept="zydTN" id="40BRAwMuASn" role="z_RuP">
+        <node concept="zydTL" id="40BRAwMuASp" role="zyiaL">
           <property role="zydTR" value="12" />
         </node>
-        <node concept="zydTL" id="40BRAwMuzP7" role="zyiaR">
+        <node concept="zydTL" id="40BRAwMuASr" role="zyiaR">
           <property role="zydTR" value="45" />
         </node>
       </node>
@@ -74,6 +75,14 @@
         </node>
       </node>
     </node>
+    <node concept="1MnucZ" id="40BRAwMuATv" role="z_RY$" />
+    <node concept="z_RYI" id="40BRAwMuAVm" role="z_RY$">
+      <property role="TrG5h" value="x" />
+      <node concept="zydTL" id="40BRAwMuClu" role="z_RuP">
+        <property role="zydTR" value="1" />
+      </node>
+    </node>
+    <node concept="1MnucZ" id="40BRAwMuF8T" role="z_RY$" />
   </node>
 </model>
 

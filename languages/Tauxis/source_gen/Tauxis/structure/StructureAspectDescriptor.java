@@ -19,6 +19,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEgalite = createDescriptorForEgalite();
   /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
   /*package*/ final ConceptDescriptor myConceptInstruction = createDescriptorForInstruction();
+  /*package*/ final ConceptDescriptor myConceptLigneVide = createDescriptorForLigneVide();
   /*package*/ final ConceptDescriptor myConceptMultiplication = createDescriptorForMultiplication();
   /*package*/ final ConceptDescriptor myConceptNombre = createDescriptorForNombre();
   /*package*/ final ConceptDescriptor myConceptOperationBinaire = createDescriptorForOperationBinaire();
@@ -38,7 +39,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAddition, myConceptChaine, myConceptDeclarationVariable, myConceptEgalite, myConceptExpression, myConceptInstruction, myConceptMultiplication, myConceptNombre, myConceptOperationBinaire, myConceptProgramme, myConceptRefVariable);
+    return Arrays.asList(myConceptAddition, myConceptChaine, myConceptDeclarationVariable, myConceptEgalite, myConceptExpression, myConceptInstruction, myConceptLigneVide, myConceptMultiplication, myConceptNombre, myConceptOperationBinaire, myConceptProgramme, myConceptRefVariable);
   }
 
   @Override
@@ -57,6 +58,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptExpression;
       case LanguageConceptSwitch.Instruction:
         return myConceptInstruction;
+      case LanguageConceptSwitch.LigneVide:
+        return myConceptLigneVide;
       case LanguageConceptSwitch.Multiplication:
         return myConceptMultiplication;
       case LanguageConceptSwitch.Nombre:
@@ -127,6 +130,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Tauxis", "Instruction", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9265L);
     b.class_(false, true, false);
     b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332330085");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLigneVide() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Tauxis", "LigneVide", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x4027de68327a3d57L);
+    b.class_(false, false, false);
+    b.super_("Tauxis.structure.Instruction", 0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9265L);
+    b.origin("r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/4622908081623940439");
     b.version(2);
     return b.create();
   }
