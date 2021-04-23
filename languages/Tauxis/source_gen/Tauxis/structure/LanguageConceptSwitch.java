@@ -20,7 +20,7 @@ public final class LanguageConceptSwitch {
   public static final int Nombre = 8;
   public static final int OperationBinaire = 9;
   public static final int Programme = 10;
-  public static final int RefVariable = 11;
+  public static final int ReferenceVariable = 11;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L);
@@ -35,7 +35,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x1c58edc83fd033b9L, Nombre);
     builder.put(0x1c58edc83fd033baL, OperationBinaire);
     builder.put(0x1c58edc83fcf9267L, Programme);
-    builder.put(0x1c58edc83fd00cadL, RefVariable);
+    builder.put(0x1c58edc83fd00cadL, ReferenceVariable);
     myIndex = builder.seal();
   }
 

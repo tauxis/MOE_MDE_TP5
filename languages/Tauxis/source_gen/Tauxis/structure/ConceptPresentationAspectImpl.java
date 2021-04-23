@@ -20,7 +20,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Nombre;
   private ConceptPresentation props_OperationBinaire;
   private ConceptPresentation props_Programme;
-  private ConceptPresentation props_RefVariable;
+  private ConceptPresentation props_ReferenceVariable;
 
   @Override
   @Nullable
@@ -102,13 +102,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Programme = cpb.create();
         }
         return props_Programme;
-      case LanguageConceptSwitch.RefVariable:
-        if (props_RefVariable == null) {
+      case LanguageConceptSwitch.ReferenceVariable:
+        if (props_ReferenceVariable == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_RefVariable = cpb.create();
+          cpb.presentationByReference(0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd00cadL, 0x4027de68327c4d5fL, "declarationvariable", "", "");
+          props_ReferenceVariable = cpb.create();
         }
-        return props_RefVariable;
+        return props_ReferenceVariable;
     }
     return null;
   }

@@ -15,7 +15,7 @@
       <unit at="10,0,50,0" name="Tauxis.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="15,0,190,0" name="Tauxis.structure.StructureAspectDescriptor" />
+      <unit at="15,0,191,0" name="Tauxis.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332330085">
@@ -156,36 +156,37 @@
   </root>
   <root nodeRef="r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332361389">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="2042643875332361389" at="23,0,24,0" concept="1" trace="props_RefVariable" />
-      <node id="2042643875332361389" at="106,40,107,76" concept="3" />
-      <node id="2042643875332361389" at="107,76,108,35" concept="0" />
-      <node id="2042643875332361389" at="108,35,109,43" concept="0" />
-      <node id="2042643875332361389" at="110,9,111,33" concept="4" />
-      <node id="2042643875332361389" at="105,45,110,9" concept="2" />
-      <scope id="2042643875332361389" at="106,40,109,43">
+      <node id="2042643875332361389" at="23,0,24,0" concept="1" trace="props_ReferenceVariable" />
+      <node id="2042643875332361389" at="106,46,107,76" concept="3" />
+      <node id="2042643875332361389" at="107,76,108,153" concept="0" />
+      <node id="2042643875332361389" at="108,153,109,49" concept="0" />
+      <node id="2042643875332361389" at="110,9,111,39" concept="4" />
+      <node id="2042643875332361389" at="105,51,110,9" concept="2" />
+      <scope id="2042643875332361389" at="106,46,109,49">
         <var name="cpb" id="2042643875332361389" />
       </scope>
-      <scope id="2042643875332361389" at="105,45,111,33" />
+      <scope id="2042643875332361389" at="105,51,111,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2042643875332361389" at="23,0,24,0" concept="5" trace="RefVariable" />
-      <node id="2042643875332361389" at="37,48,38,50" concept="0" />
+      <node id="2042643875332361389" at="23,0,24,0" concept="5" trace="ReferenceVariable" />
+      <node id="2042643875332361389" at="37,48,38,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="2042643875332361389" at="27,0,28,0" concept="1" trace="myConceptRefVariable" />
-      <node id="2042643875332361389" at="71,45,72,36" concept="4" />
-      <node id="2042643875332361389" at="181,69,182,152" concept="3" />
-      <node id="2042643875332361389" at="182,152,183,34" concept="0" />
-      <node id="2042643875332361389" at="183,34,184,71" concept="0" />
-      <node id="2042643875332361389" at="184,71,185,93" concept="0" />
+      <node id="2042643875332361389" at="27,0,28,0" concept="1" trace="myConceptReferenceVariable" />
+      <node id="2042643875332361389" at="71,51,72,42" concept="4" />
+      <node id="2042643875332361389" at="181,75,182,158" concept="3" />
+      <node id="2042643875332361389" at="182,158,183,34" concept="0" />
+      <node id="2042643875332361389" at="183,34,184,107" concept="0" />
+      <node id="2042643875332361389" at="184,107,185,93" concept="0" />
       <node id="2042643875332361389" at="185,93,186,17" concept="0" />
-      <node id="2042643875332361389" at="186,17,187,22" concept="4" />
-      <node id="2042643875332361389" at="181,0,189,0" concept="6" trace="createDescriptorForRefVariable#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="2042643875332361389" at="71,45,72,36" />
-      <scope id="2042643875332361389" at="181,69,187,22">
+      <node id="4622908081624075615" at="186,17,187,183" concept="0" />
+      <node id="2042643875332361389" at="187,183,188,22" concept="4" />
+      <node id="2042643875332361389" at="181,0,190,0" concept="6" trace="createDescriptorForReferenceVariable#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2042643875332361389" at="71,51,72,42" />
+      <scope id="2042643875332361389" at="181,75,188,22">
         <var name="b" id="2042643875332361389" />
       </scope>
-      <scope id="2042643875332361389" at="181,0,189,0" />
+      <scope id="2042643875332361389" at="181,0,190,0" />
     </file>
   </root>
   <root nodeRef="r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332371385">

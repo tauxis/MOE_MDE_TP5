@@ -89,10 +89,13 @@
   </node>
   <node concept="1TIwiD" id="1LoVswZO0MH">
     <property role="EcuMT" value="2042643875332361389" />
-    <property role="TrG5h" value="RefVariable" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1LoVswZO3f1" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <property role="TrG5h" value="ReferenceVariable" />
+    <ref role="1TJDcQ" node="1LoVswZNTDU" resolve="Expression" />
+    <node concept="1TJgyj" id="40BRAwMv4Pv" role="1TKVEi">
+      <property role="IQ2ns" value="4622908081624075615" />
+      <property role="20kJfa" value="declarationvariable" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1LoVswZNT9A" resolve="DeclarationVariable" />
     </node>
   </node>
   <node concept="1TIwiD" id="1LoVswZO3eT">
