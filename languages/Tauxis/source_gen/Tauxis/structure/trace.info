@@ -15,7 +15,7 @@
       <unit at="10,0,50,0" name="Tauxis.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="15,0,191,0" name="Tauxis.structure.StructureAspectDescriptor" />
+      <unit at="15,0,192,0" name="Tauxis.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332330085">
@@ -110,16 +110,17 @@
       <node id="2042643875332330087" at="172,67,173,150" concept="3" />
       <node id="2042643875332330087" at="173,150,174,33" concept="0" />
       <node id="2042643875332330087" at="174,33,175,71" concept="0" />
-      <node id="2042643875332330087" at="175,71,176,93" concept="0" />
-      <node id="2042643875332330087" at="176,93,177,17" concept="0" />
-      <node id="2042643875332330092" at="177,17,178,204" concept="0" />
-      <node id="2042643875332330087" at="178,204,179,22" concept="4" />
-      <node id="2042643875332330087" at="172,0,181,0" concept="6" trace="createDescriptorForProgramme#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="2042643875332330087" at="175,71,176,76" concept="0" />
+      <node id="2042643875332330087" at="176,76,177,93" concept="0" />
+      <node id="2042643875332330087" at="177,93,178,17" concept="0" />
+      <node id="2042643875332330092" at="178,17,179,204" concept="0" />
+      <node id="2042643875332330087" at="179,204,180,22" concept="4" />
+      <node id="2042643875332330087" at="172,0,182,0" concept="6" trace="createDescriptorForProgramme#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2042643875332330087" at="69,43,70,34" />
-      <scope id="2042643875332330087" at="172,67,179,22">
+      <scope id="2042643875332330087" at="172,67,180,22">
         <var name="b" id="2042643875332330087" />
       </scope>
-      <scope id="2042643875332330087" at="172,0,181,0" />
+      <scope id="2042643875332330087" at="172,0,182,0" />
     </file>
   </root>
   <root nodeRef="r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332332154">
@@ -174,19 +175,19 @@
     <file name="StructureAspectDescriptor.java">
       <node id="2042643875332361389" at="27,0,28,0" concept="1" trace="myConceptReferenceVariable" />
       <node id="2042643875332361389" at="71,51,72,42" concept="4" />
-      <node id="2042643875332361389" at="181,75,182,158" concept="3" />
-      <node id="2042643875332361389" at="182,158,183,34" concept="0" />
-      <node id="2042643875332361389" at="183,34,184,107" concept="0" />
-      <node id="2042643875332361389" at="184,107,185,93" concept="0" />
-      <node id="2042643875332361389" at="185,93,186,17" concept="0" />
-      <node id="4622908081624075615" at="186,17,187,183" concept="0" />
-      <node id="2042643875332361389" at="187,183,188,22" concept="4" />
-      <node id="2042643875332361389" at="181,0,190,0" concept="6" trace="createDescriptorForReferenceVariable#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="2042643875332361389" at="182,75,183,158" concept="3" />
+      <node id="2042643875332361389" at="183,158,184,34" concept="0" />
+      <node id="2042643875332361389" at="184,34,185,107" concept="0" />
+      <node id="2042643875332361389" at="185,107,186,93" concept="0" />
+      <node id="2042643875332361389" at="186,93,187,17" concept="0" />
+      <node id="4622908081624075615" at="187,17,188,183" concept="0" />
+      <node id="2042643875332361389" at="188,183,189,22" concept="4" />
+      <node id="2042643875332361389" at="182,0,191,0" concept="6" trace="createDescriptorForReferenceVariable#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2042643875332361389" at="71,51,72,42" />
-      <scope id="2042643875332361389" at="181,75,188,22">
+      <scope id="2042643875332361389" at="182,75,189,22">
         <var name="b" id="2042643875332361389" />
       </scope>
-      <scope id="2042643875332361389" at="181,0,190,0" />
+      <scope id="2042643875332361389" at="182,0,191,0" />
     </file>
   </root>
   <root nodeRef="r:06bf96df-72b2-4481-a9e0-b58d20b168cc(Tauxis.structure)/2042643875332371385">

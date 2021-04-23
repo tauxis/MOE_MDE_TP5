@@ -434,10 +434,13 @@
     <node concept="3clFbS" id="40BRAwMv2GB" role="18ibNy">
       <node concept="1Z5TYs" id="40BRAwMv2Ox" role="3cqZAp">
         <node concept="mw_s8" id="40BRAwMv2OP" role="1ZfhKB">
-          <node concept="2ShNRf" id="40BRAwMv2OL" role="mwGJk">
-            <node concept="3zrR0B" id="40BRAwMv2TN" role="2ShVmc">
-              <node concept="3Tqbb2" id="40BRAwMv2TP" role="3zrR0E">
-                <ref role="ehGHo" to="tpee:hP7QB7G" resolve="StringType" />
+          <node concept="1Z2H0r" id="40BRAwMviH8" role="mwGJk">
+            <node concept="2OqwBi" id="40BRAwMviPD" role="1Z2MuG">
+              <node concept="1YBJjd" id="40BRAwMviHo" role="2Oq$k0">
+                <ref role="1YBMHb" node="40BRAwMv2GD" resolve="declarationVariable" />
+              </node>
+              <node concept="3TrEf2" id="40BRAwMvj1g" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj33:1LoVswZNTDX" resolve="expression" />
               </node>
             </node>
           </node>
