@@ -12,6 +12,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SConcept;
 
 public class typeof_ReferenceVariable_InferenceRule extends AbstractInferenceRule_Runtime implements InferenceRule_Runtime {
@@ -21,7 +22,7 @@ public class typeof_ReferenceVariable_InferenceRule extends AbstractInferenceRul
     {
       SNode _nodeToCheck_1029348928467 = referenceVariable;
       EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:782c04d1-2bb8-47fe-990c-f6177092284f(Tauxis.typesystem)", "4622908081624078590", 0, null);
-      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782c04d1-2bb8-47fe-990c-f6177092284f(Tauxis.typesystem)", "4622908081624078298", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(referenceVariable, LINKS.declarationvariable$MIZ1), "r:782c04d1-2bb8-47fe-990c-f6177092284f(Tauxis.typesystem)", "4622908081624078606", true), _info_12389875345);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782c04d1-2bb8-47fe-990c-f6177092284f(Tauxis.typesystem)", "4622908081624078298", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(SLinkOperations.getTarget(referenceVariable, LINKS.declarationvariable$MIZ1), LINKS.expression$Slt_), "r:782c04d1-2bb8-47fe-990c-f6177092284f(Tauxis.typesystem)", "4622908081624078606", true), _info_12389875345);
     }
   }
   public SAbstractConcept getApplicableConcept() {
@@ -36,6 +37,7 @@ public class typeof_ReferenceVariable_InferenceRule extends AbstractInferenceRul
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink declarationvariable$MIZ1 = MetaAdapterFactory.getReferenceLink(0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fd00cadL, 0x4027de68327c4d5fL, "declarationvariable");
+    /*package*/ static final SContainmentLink expression$Slt_ = MetaAdapterFactory.getContainmentLink(0xf6cd233ef2b447e9L, 0x92ff415cf49c3252L, 0x1c58edc83fcf9266L, 0x1c58edc83fcf9a7dL, "expression");
   }
 
   private static final class CONCEPTS {
